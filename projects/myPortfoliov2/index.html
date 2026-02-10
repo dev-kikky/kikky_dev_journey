@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website v2</title>
+    <!-- style import(extrnal) -->
+    <!-- <link rel="stylesheet" href="/static//styles/main.css"> -->
+    <link rel="stylesheet" href="./main.css">
+
+    
+    <!-- internal styling -->
+     <style>
+        p {
+            color: pink;
+            font-size: 20px;
+
+        }
+        /* div{
+            border-radius: 40px;
+        } */
+        #about-me{
+            background-color: brown;
+        }
+     </style>
+</head>
+<body>
+  <header>
+    <!-- inline css  -->
+    <!-- color attribute of style target fonts(letters) -->
+    <div style="color: white; background-color: aqua;" id="logo">
+        <h1>Welcome To My Website</h1>
+        <p style="color: black; background-color: blueviolet;">Peace</p>
+    </div>
+    <nav>
+        <!-- quick links -->
+         <p>Learning HTML step by step ✈</p>
+         <!-- <a href="/"> HTML</a> -->
+         <ul>
+            <!-- anchor tag <a href=""></a>  is used for creating links for naviagation within page, pages and external website-->
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                
+                <a href="#my-skill">Skills</a>
+            </li>
+            <li>
+                <a href="#contactMe">ContactMe</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">Youtube</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">Youtube blank</a>
+            </li>
+         </ul>
+    </nav>
+  </header> 
+  <main>
+    
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>My name is <strong>Kikky.</strong> I am learning  <strong>HTML</strong> so i can biuld websites.</p>
+        <img src="/static/images/sneakers.jpg" height="500px" alt="sneakers">
+    </section>
+    <section id="my-skill">
+        <h2>My Skills</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    </section>
+    <section id="contactMe">
+        <h2>Contact Me</h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-item">
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name">
+                </div>
+                <br>
+                <div id="emailDiv" class="input-item">
+                    <!-- the for ppty in label targets the id of the input -->
+                    <label for="email">Email</label>
+                    <!-- input types: email, text,tel,.. -->
+                     <!-- the name ppty is targeted by backend -->
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+            <br>
+            <button>Submit</button>
+        </form>
+    </section>
+  </main> 
+  <footer>
+    &copy; All right reserved 
+
+  </footer>
+</body>
+</html>
