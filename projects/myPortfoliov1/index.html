@@ -10,21 +10,36 @@
     <div id="logo">
         <h1>Welcome To My Website</h1>
     </div>
-
     <nav>
         <!-- quick links -->
          <p>Learning HTML step by step ✈</p>
          <ul>
-            <li>About Me</li>
-            <li>Skills</li>
-            <li>Contact</li>
+            <!-- anchor tag <a href=""></a>  is used for creating links for naviagation within page, pages and external website-->
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                
+                <a href="#my-skill">Skills</a>
+            </li>
+            <li>
+                <a href="#contactMe">ContactMe</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">Youtube</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">Youtube blank</a>
+            </li>
          </ul>
     </nav>
   </header> 
   <main>
+    
     <section id="about-me">
         <h2>About Me</h2>
         <p>My name is <strong>Kikky.</strong> I am learning  <strong>HTML</strong> so i can biuld websites.</p>
+        <img src="/static/images/sneakers.jpg" height="500px" alt="sneakers">
     </section>
     <section id="my-skill">
         <h2>My Skills</h2>
@@ -44,7 +59,10 @@
                 </div>
                 <br>
                 <div class="input-item">
+                    <!-- the for ppty in label targets the id of the input -->
                     <label for="email">Email</label><br>
+                    <!-- input types: email, text,tel,.. -->
+                     <!-- the name ppty is targeted by backend -->
                     <input type="email" name="email" id="email">
                 </div>
             </div>
@@ -54,6 +72,7 @@
     </section>
   </main> 
   <footer>
+    &copy; All right reserved 
 
   </footer>
 </body>

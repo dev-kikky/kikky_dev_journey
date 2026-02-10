@@ -1,0 +1,49 @@
+/* element selector  */
+html{
+    background-color: #fff;
+    font-size: 15px;
+
+
+}
+p{
+    color: red;
+}
+
+/* class selector  is selected with . */ 
+/* .className{} */
+.input-item{
+ background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+/* id selector uses # */
+/* #idName */
+#contactMe{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* child selector  */
+li a{
+    text-decoration: none;
+
+}
+
+.input-item label{
+    color: black;
+
+    align-self: center;
+    padding-right: 10px;
+    font-size: 20px;
+
+}
+#emailDiv input {
+ font-size: 15px;
+ padding: 10px;
+}
+#contactMe button{
+    align-self: center;
+}
