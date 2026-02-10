@@ -1,0 +1,131 @@
+/* global styling for the websites */
+html,body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+}
+
+/* General specific element styling */
+h1 {
+    color: #333;
+}
+h2 {
+    color: #444;
+}
+p {
+    color: #666;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out; /* transition is used to create smooth animation effect when the user hovers over the link. */
+}
+/* hover event(effect) is when the mouse pointer is over an element, it can be used to change the style of an element when the user hovers over it. */ 
+
+header a{
+    border: #007bff solid 1px;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+header a:hover {
+    text-decoration: underline;
+    /* color: #0056b3; */
+    color: purple;
+    border: #9e3c0b solid 1px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white
+
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: 3px solid #021223;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.8s ease-in-out;
+}
+button:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+/* styling thre e sections of the website: header, main and footer */ 
+
+header {
+    background-color: #fff;
+
+    /* padding: 20px; */
+    /* text-align: center; */
+    /* border-bottom: 1px solid #ddd; */
+    display: flex; 
+    /*default flex-direction  is horizontal */
+    /* flex-direction: column;   */
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    padding:0 20px;
+    align-items: center;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+#logo h1{
+    color: pink;
+    /* font-size: 40px; */
+
+}
+
+#logo h1 span:first-child {
+    color: purple
+}
+#io{
+    color: green;
+}
+nav a{
+    font-size: 18px;
+}
+main{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+
+}
+.image-fluid{
+    background: #eae9e9;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.image-fluid:hover{
+    background: #eae9e9;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+.image-fluid img{
+    border-radius: 20px;
+    /* height: 500px; */
+}

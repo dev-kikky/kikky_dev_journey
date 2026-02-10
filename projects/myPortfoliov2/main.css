@@ -2,8 +2,6 @@
 html{
     background-color: #fff;
     font-size: 15px;
-
-
 }
 p{
     color: red;
@@ -46,4 +44,9 @@ li a{
 }
 #contactMe button{
     align-self: center;
+}
+
+/* chain selector  */ 
+h2,h3{
+    color: #444444;
 }
