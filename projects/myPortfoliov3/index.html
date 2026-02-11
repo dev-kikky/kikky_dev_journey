@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website v3</title>
+    <link rel="stylesheet" href="./main.css">
+
+    
+</head>
+<body>
+  <header>
+    <div  id="logo">
+        <!-- <h1 style="color: pink;"><span style="color: aqua;"> Kikky's</span> Portfolio</h1> -->
+        <h1 ><span > Kikky's</span> Portfol<span id="io">io</span></h1>
+    </div>
+    <nav>
+         <ul>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                
+                <a href="#my-skill">Skills</a>
+            </li>
+            <li>
+                <a href="#contactMe">ContactMe</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">Youtube</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">Youtube blank</a>
+            </li>
+         </ul>
+    </nav>
+  </header> 
+  <main>
+    
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>My name is <strong>Kikky.</strong> I am learning  <strong>HTML</strong> so i can biuld websites.</p>
+        <div class="image-fluid">
+            <img src="/static/images/sneakers.jpg" height="500px" alt="sneakers">
+            <div class="product-details">
+                <h3>Stylish Dress</h3>
+                <p>Price: $49.99</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="my-skill">
+        <h2>My Skills</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    </section>
+    <section id="contactMe">
+        <h2>Contact Me</h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-item">
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name">
+                </div>
+                <br>
+                <div id="emailDiv" class="input-item">
+                    <!-- the for ppty in label targets the id of the input -->
+                    <label for="email">Email</label>
+                    <!-- input types: email, text,tel,.. -->
+                     <!-- the name ppty is targeted by backend -->
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+            <br>
+            <button>Submit</button>
+        </form>
+    </section>
+  </main> 
+  <footer>
+    &copy; All right reserved 
+
+  </footer>
+</body>
+</html>
